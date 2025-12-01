@@ -8,31 +8,22 @@
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- Link CSS -->
-<link rel="stylesheet" href="style.css">
+<link = rel"stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Navbar with toggle buttons -->
-<nav class="navbar">
-    <div class="nav-container">
-        <div class="nav-logo">ADEL ELORABY</div>
-        <div class="nav-toggle" id="navToggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">ADEL ELORABY</div>
+    <div class="hamburger" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+    <div class="menu">
+        <a href="#hero">Home</a>
+        <a href="#team-achievements">Team Achievements</a>
+        <a href="#individual-achievements">Individual Achievements</a>
+        <a href="#teams">Teams</a>
+        <a href="#langs">Langs</a>
+        <a href="#contact">Contact</a>
     </div>
-</nav>
-
-<!-- Side Navigation -->
-<div class="side-menu" id="sideMenu">
-    <ul>
-        <li><a href="#about-section" class="menu-link">About Me</a></li>
-        <li><a href="#teams-section" class="menu-link">Teams</a></li>
-        <li><a href="#langs-section" class="menu-link">Languages</a></li>
-        <li><a href="#contact-section" class="menu-link">Contact</a></li>
-    </ul>
 </div>
 
 <!-- Animated Background -->
@@ -45,94 +36,116 @@
 
 <div class="container">
 
-<!-- Name and About Me -->
-<section id="about-section" class="about-section">
-    <h1 class="main-title">ADEL ELORABY</h1>
-    <div class="about-card">
-        <h2><i class="fa-solid fa-info-circle"></i> About Me</h2>
-        <p>Hello! I'm <strong>Adel Mohamed Eloraby</strong> from Dakahlia, Egypt. I'm a passionate programmer with 4 years of experience in Web development, Game programming, and Python & Flask. I enjoy building projects that combine creativity and technical skills.</p>
-    </div>
-</section>
+<h1 class="main-title" id="hero">ADEL ELORABY</h1>
 
-<!-- Teams Section -->
-<section id="teams-section">
-<h2 class="section-title">Teams Under Leadership <i class="fa-solid fa-sitemap"></i></h2>
-<div class="teams-container">
-    <div class="team-card">
-        <h4>Control Team 1</h4>
-        <p>Python & Flask</p>
-        <h3><i class="fa-brands fa-python"></i> Control Team 1</h3>
+<div class="hero-section">
+    <p>Hello! I'm <strong>Adel Mohamed Eloraby</strong> from Dakahlia, Egypt.</p>
+    <p>I'm a programmer with 4 years of experience specializing in Web development, Game programming, and Python & Flask.</p>
+</div>
+
+<h2 class="section-title" id="team-achievements">Team Achievements <i class="fa-solid fa-award"></i></h2>
+
+<div class="stats-grid">
+    <div class="stat-card">
+        <div class="number">108</div>
+        <div class="label"><i class="fa-solid fa-trophy"></i> Team Awards</div>
     </div>
-    <div class="team-card">
-        <h4>Control Team 2</h4>
-        <p>Web Only</p>
-        <h3><i class="fa-solid fa-globe"></i> Control Team 2</h3>
+    <div class="stat-card">
+        <div class="number">+8</div>
+        <div class="label"><i class="fa-solid fa-medal"></i> Team Rankings</div>
     </div>
-    <div class="team-card">
-        <h4>Control Team 3</h4>
-        <p>Unity Games</p>
-        <h3><i class="fa-solid fa-gamepad"></i> Control Team 3</h3>
+    <div class="stat-card">
+        <div class="number">+36</div>
+        <div class="label"><i class="fa-solid fa-film"></i> Team Presentations</div>
     </div>
-    <div class="team-card">
-        <h4>Control Team 4</h4>
-        <p>Hosting & Deployment</p>
-        <h3><i class="fa-brands fa-css3-alt"></i> Control Team 4</h3>
-    </div>
-    <div class="team-card">
-        <h4>Control Team 5</h4>
-        <p>Artificial Intelligence</p>
-        <h3><i class="fa-solid fa-robot"></i> Control Team 5</h3>
-    </div>
-    <div class="team-card">
-        <h4>Control Team 6</h4>
-        <p>Database Management</p>
-        <h3><i class="fa-solid fa-database"></i> Control Team 6</h3>
+    <div class="stat-card">
+        <div class="number">+14000</div>
+        <div class="label"><i class="fa-solid fa-rocket"></i> Completed Projects</div>
     </div>
 </div>
-</section>
 
-<!-- Languages Section -->
-<section id="langs-section">
-<h2 class="section-title">Languages <i class="fa-solid fa-language"></i></h2>
-<div class="langs-container">
+<h2 class="section-title" id="individual-achievements">Individual Achievements <i class="fa-solid fa-star"></i></h2>
+
+<div class="stats-grid">
+    <div class="stat-card">
+        <div class="number">+11</div>
+        <div class="label"><i class="fa-solid fa-users"></i> Teams Led</div>
+    </div>
+    <div class="stat-card">
+        <div class="number">+13</div>
+        <div class="label"><i class="fa-solid fa-certificate"></i> Strong Certificates</div>
+    </div>
+    <div class="stat-card">
+        <div class="number">10</div>
+        <div class="label"><i class="fa-solid fa-flag-checkered"></i> NASA Project Rank</div>
+    </div>
+</div>
+
+<h2 class="section-title" id="teams">Teams Under Leadership <i class="fa-solid fa-sitemap"></i></h2>
+
+<div class="teams-container">
+    <div class="team-card">
+        <h3><i class="fa-brands fa-python"></i> Control Team 1</h3>
+        <p>Python & Flask</p>
+    </div>
+    <div class="team-card">
+        <h3><i class="fa-solid fa-globe"></i> Control Team 2</h3>
+        <p>Web Only</p>
+    </div>
+    <div class="team-card">
+        <h3><i class="fa-solid fa-gamepad"></i> Control Team 3</h3>
+        <p>Unity Games</p>
+    </div>
+    <div class="team-card">
+        <h3><i class="fa-brands fa-css3-alt"></i> Control Team 4</h3>
+        <p>Hosting & Deployment</p>
+    </div>
+    <div class="team-card">
+        <h3><i class="fa-solid fa-robot"></i> Control Team 5</h3>
+        <p>Artificial Intelligence</p>
+    </div>
+    <div class="team-card">
+        <h3><i class="fa-solid fa-database"></i> Control Team 6</h3>
+        <p>Database Management</p>
+    </div>
+</div>
+
+<h2 class="section-title" id="langs">Languages <i class="fa-solid fa-language"></i></h2>
+
+<div class="langs-grid">
     <div class="lang-card">
-        <svg viewBox="0 0 64 64" class="lang-icon">
-            <circle cx="32" cy="32" r="30" fill="#FFD700"/>
-            <text x="32" y="38" font-size="20" fill="#000" text-anchor="middle" font-family="Arial">AR</text>
-        </svg>
-        <h3>Arabic</h3>
+        <h3><i class="fa-solid fa-flag"></i> Arabic</h3>
         <p>Native</p>
     </div>
     <div class="lang-card">
-        <svg viewBox="0 0 64 64" class="lang-icon">
-            <circle cx="32" cy="32" r="30" fill="#FFD700"/>
-            <text x="32" y="38" font-size="20" fill="#000" text-anchor="middle" font-family="Arial">EN</text>
-        </svg>
-        <h3>English</h3>
+        <h3><i class="fa-solid fa-flag-usa"></i> English</h3>
         <p>Good</p>
     </div>
     <div class="lang-card">
-        <svg viewBox="0 0 64 64" class="lang-icon">
-            <circle cx="32" cy="32" r="30" fill="#FFD700"/>
-            <text x="32" y="38" font-size="20" fill="#000" text-anchor="middle" font-family="Arial">DE</text>
-        </svg>
-        <h3>German</h3>
+        <h3><i class="fa-solid fa-flag"></i> German</h3>
         <p>Good</p>
     </div>
     <div class="lang-card">
-        <svg viewBox="0 0 64 64" class="lang-icon">
-            <circle cx="32" cy="32" r="30" fill="#FFD700"/>
-            <text x="32" y="38" font-size="20" fill="#000" text-anchor="middle" font-family="Arial">JP</text>
-        </svg>
-        <h3>Japanese</h3>
+        <h3><i class="fa-solid fa-flag"></i> Japanese</h3>
         <p>Good</p>
+    </div>
+    <div class="lang-card">
+        <h3><i class="fa-solid fa-flag"></i> Chinese</h3>
+        <p>Intermediate</p>
+    </div>
+    <div class="lang-card">
+        <h3><i class="fa-solid fa-flag"></i> Korean</h3>
+        <p>Learning</p>
+    </div>
+    <div class="lang-card">
+        <h3><i class="fa-solid fa-flag"></i> French</h3>
+        <p>Learning</p>
     </div>
 </div>
-</section>
 
-<!-- Contact Section -->
-<section id="contact-section" class="contact-section">
+<div class="contact-section" id="contact">
 <h2><i class="fa-solid fa-envelope"></i> Contact Me</h2>
+
 <form class="contact-form" onsubmit="sendWhatsApp(event)">
     <div class="form-group">
         <label>Name</label>
@@ -152,9 +165,8 @@
     </div>
     <button class="submit-btn" type="submit">Send</button>
 </form>
-</section>
+</div>
 
-<!-- Footer -->
 <div class="footer">
 <p>Made with <a href="https://wa.me/+201227675955">Adel Eloraby <i class="fa-solid fa-heart"></i></a></p>
 </div>
@@ -162,32 +174,28 @@
 </div>
 
 <script>
-const navToggle = document.getElementById('navToggle');
-const sideMenu = document.getElementById('sideMenu');
-const menuLinks = document.querySelectorAll('.menu-link');
-
-navToggle.addEventListener('click', () => {
-    sideMenu.classList.toggle('open');
-});
-
-menuLinks.forEach(link => {
-    link.addEventListener('click', (e)=>{
-        e.preventDefault();
-        const target = document.querySelector(link.getAttribute('href'));
-        target.scrollIntoView({behavior:'smooth'});
-        sideMenu.classList.remove('open');
-    });
-});
-
 function sendWhatsApp(e){
     e.preventDefault();
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
     const topic = document.getElementById('topic').value;
+
     const message = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0ATopic: ${topic}`;
-    window.open(`https://wa.me/+201227675955?text=${message}`, '_blank');
+    const whatsappNumber = "+201227675955"; 
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
 }
+
+function toggleMenu() {
+    document.querySelector('.menu').classList.toggle('active');
+}
+
+// Close menu when clicking on a link (mobile)
+document.querySelectorAll('.menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.menu').classList.remove('active');
+    });
+});
 </script>
 
 </body>
