@@ -8,7 +8,8 @@
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<link = rel"stylesheet" href="style.css">
+<!-- Main Style -->
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -190,7 +191,6 @@ function toggleMenu() {
     document.querySelector('.menu').classList.toggle('active');
 }
 
-// Close menu when clicking on a link (mobile)
 document.querySelectorAll('.menu a').forEach(link => {
     link.addEventListener('click', () => {
         document.querySelector('.menu').classList.remove('active');
