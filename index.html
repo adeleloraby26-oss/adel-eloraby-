@@ -13,20 +13,27 @@
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- Navbar with toggle buttons -->
 <nav class="navbar">
     <div class="nav-container">
         <div class="nav-logo">ADEL ELORABY</div>
-        <div class="nav-toggle" id="navToggle"><i class="fa-solid fa-bars"></i></div>
-        <ul class="nav-menu" id="navMenu">
-            <li><a href="#about-section">About Me</a></li>
-            <li><a href="#hero-section">Home</a></li>
-            <li><a href="#teams-section">Teams</a></li>
-            <li><a href="#langs-section">Langs</a></li>
-            <li><a href="#contact-section">Contact</a></li>
-        </ul>
+        <div class="nav-toggle" id="navToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </div>
 </nav>
+
+<!-- Side Navigation -->
+<div class="side-menu" id="sideMenu">
+    <ul>
+        <li><a href="#about-section" class="menu-link">About Me</a></li>
+        <li><a href="#teams-section" class="menu-link">Teams</a></li>
+        <li><a href="#langs-section" class="menu-link">Languages</a></li>
+        <li><a href="#contact-section" class="menu-link">Contact</a></li>
+    </ul>
+</div>
 
 <!-- Animated Background -->
 <div class="animated-bg">
@@ -38,59 +45,17 @@
 
 <div class="container">
 
-<!-- About Me Section -->
-<section id="about-section">
+<!-- Name and About Me -->
+<section id="about-section" class="about-section">
+    <h1 class="main-title">ADEL ELORABY</h1>
     <div class="about-card">
         <h2><i class="fa-solid fa-info-circle"></i> About Me</h2>
         <p>Hello! I'm <strong>Adel Mohamed Eloraby</strong> from Dakahlia, Egypt. I'm a passionate programmer with 4 years of experience in Web development, Game programming, and Python & Flask. I enjoy building projects that combine creativity and technical skills.</p>
     </div>
 </section>
 
-<!-- Hero Section -->
-<section id="hero-section" class="hero-section">
-    <h1 class="main-title">ADEL ELORABY</h1>
-    <p>Hello! I'm <strong>Adel Mohamed Eloraby</strong> from Dakahlia, Egypt.</p>
-    <p>I'm a programmer with 4 years of experience specializing in Web development, Game programming, and Python & Flask.</p>
-</section>
-
-<!-- Team Achievements -->
+<!-- Teams Section -->
 <section id="teams-section">
-<h2 class="section-title">Team Achievements <i class="fa-solid fa-award"></i></h2>
-<div class="stats-grid">
-    <div class="stat-card">
-        <div class="number">108</div>
-        <div class="label"><i class="fa-solid fa-trophy"></i> Team Awards</div>
-    </div>
-    <div class="stat-card">
-        <div class="number">+8</div>
-        <div class="label"><i class="fa-solid fa-medal"></i> Team Rankings</div>
-    </div>
-    <div class="stat-card">
-        <div class="number">+36</div>
-        <div class="label"><i class="fa-solid fa-film"></i> Team Presentations</div>
-    </div>
-    <div class="stat-card">
-        <div class="number">+14000</div>
-        <div class="label"><i class="fa-solid fa-rocket"></i> Completed Projects</div>
-    </div>
-</div>
-
-<h2 class="section-title">Individual Achievements <i class="fa-solid fa-star"></i></h2>
-<div class="stats-grid">
-    <div class="stat-card">
-        <div class="number">+11</div>
-        <div class="label"><i class="fa-solid fa-users"></i> Teams Led</div>
-    </div>
-    <div class="stat-card">
-        <div class="number">+13</div>
-        <div class="label"><i class="fa-solid fa-certificate"></i> Strong Certificates</div>
-    </div>
-    <div class="stat-card">
-        <div class="number">10</div>
-        <div class="label"><i class="fa-solid fa-flag-checkered"></i> NASA Project Rank</div>
-    </div>
-</div>
-
 <h2 class="section-title">Teams Under Leadership <i class="fa-solid fa-sitemap"></i></h2>
 <div class="teams-container">
     <div class="team-card">
@@ -132,59 +97,35 @@
 <div class="langs-container">
     <div class="lang-card">
         <svg viewBox="0 0 64 64" class="lang-icon">
-            <circle cx="32" cy="32" r="30" fill="#007A3D"/>
-            <text x="32" y="38" font-size="20" fill="#fff" text-anchor="middle" font-family="Arial">AR</text>
+            <circle cx="32" cy="32" r="30" fill="#FFD700"/>
+            <text x="32" y="38" font-size="20" fill="#000" text-anchor="middle" font-family="Arial">AR</text>
         </svg>
         <h3>Arabic</h3>
         <p>Native</p>
     </div>
     <div class="lang-card">
         <svg viewBox="0 0 64 64" class="lang-icon">
-            <circle cx="32" cy="32" r="30" fill="#1E90FF"/>
-            <text x="32" y="38" font-size="20" fill="#fff" text-anchor="middle" font-family="Arial">EN</text>
+            <circle cx="32" cy="32" r="30" fill="#FFD700"/>
+            <text x="32" y="38" font-size="20" fill="#000" text-anchor="middle" font-family="Arial">EN</text>
         </svg>
         <h3>English</h3>
         <p>Good</p>
     </div>
     <div class="lang-card">
         <svg viewBox="0 0 64 64" class="lang-icon">
-            <circle cx="32" cy="32" r="30" fill="#FF0000"/>
-            <text x="32" y="38" font-size="20" fill="#fff" text-anchor="middle" font-family="Arial">DE</text>
+            <circle cx="32" cy="32" r="30" fill="#FFD700"/>
+            <text x="32" y="38" font-size="20" fill="#000" text-anchor="middle" font-family="Arial">DE</text>
         </svg>
         <h3>German</h3>
         <p>Good</p>
     </div>
     <div class="lang-card">
         <svg viewBox="0 0 64 64" class="lang-icon">
-            <circle cx="32" cy="32" r="30" fill="#FF4500"/>
-            <text x="32" y="38" font-size="20" fill="#fff" text-anchor="middle" font-family="Arial">JP</text>
+            <circle cx="32" cy="32" r="30" fill="#FFD700"/>
+            <text x="32" y="38" font-size="20" fill="#000" text-anchor="middle" font-family="Arial">JP</text>
         </svg>
         <h3>Japanese</h3>
         <p>Good</p>
-    </div>
-    <div class="lang-card">
-        <svg viewBox="0 0 64 64" class="lang-icon">
-            <circle cx="32" cy="32" r="30" fill="#FFCC00"/>
-            <text x="32" y="38" font-size="20" fill="#000" text-anchor="middle" font-family="Arial">CN</text>
-        </svg>
-        <h3>Chinese</h3>
-        <p>Fair</p>
-    </div>
-    <div class="lang-card">
-        <svg viewBox="0 0 64 64" class="lang-icon">
-            <circle cx="32" cy="32" r="30" fill="#A52A2A"/>
-            <text x="32" y="38" font-size="20" fill="#fff" text-anchor="middle" font-family="Arial">KR</text>
-        </svg>
-        <h3>Korean</h3>
-        <p>Learning</p>
-    </div>
-    <div class="lang-card">
-        <svg viewBox="0 0 64 64" class="lang-icon">
-            <circle cx="32" cy="32" r="30" fill="#008000"/>
-            <text x="32" y="38" font-size="20" fill="#fff" text-anchor="middle" font-family="Arial">FR</text>
-        </svg>
-        <h3>French</h3>
-        <p>Learning</p>
     </div>
 </div>
 </section>
@@ -215,31 +156,39 @@
 
 <!-- Footer -->
 <div class="footer">
-<p>Made with <a href="#">Adel Eloraby <i class="fa-solid fa-heart"></i></a></p>
+<p>Made with <a href="https://wa.me/+201227675955">Adel Eloraby <i class="fa-solid fa-heart"></i></a></p>
 </div>
 
 </div>
 
 <script>
+const navToggle = document.getElementById('navToggle');
+const sideMenu = document.getElementById('sideMenu');
+const menuLinks = document.querySelectorAll('.menu-link');
+
+navToggle.addEventListener('click', () => {
+    sideMenu.classList.toggle('open');
+});
+
+menuLinks.forEach(link => {
+    link.addEventListener('click', (e)=>{
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        target.scrollIntoView({behavior:'smooth'});
+        sideMenu.classList.remove('open');
+    });
+});
+
 function sendWhatsApp(e){
     e.preventDefault();
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
     const topic = document.getElementById('topic').value;
-
     const message = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0ATopic: ${topic}`;
-    const whatsappNumber = "+201227675955"; 
-    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+    window.open(`https://wa.me/+201227675955?text=${message}`, '_blank');
 }
-
-// Navbar toggle
-const navToggle = document.getElementById('navToggle');
-const navMenu = document.getElementById('navMenu');
-navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-});
 </script>
 
 </body>
-                </html>
+</html>
